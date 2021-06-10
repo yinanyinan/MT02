@@ -1,0 +1,27 @@
+<!-- <template>
+  <amplify-authenticator>
+    <div>
+      My App
+      <amplify-sign-out></amplify-sign-out>
+    </div>
+  </amplify-authenticator>
+</template> -->
+
+<!-- パスワードマネージャーの有効化 -->
+<!-- <amplify-auth-container> -->
+<!-- <amplify-authenticator *ngIf="authState !== 'signedin'"></amplify-authenticator>
+<!-- </amplify-auth-container> -->
+<div *ngIf="authState === 'signedin' && user" class="App">
+    <amplify-sign-out></amplify-sign-out>
+    <div>Hello, {{user.username}}</div>
+    <!-- This is where you application template code goes -->  
+</div> -->
+
+<amplify-authenticator usernameAlias="email">
+  <amplify-sign-up
+    slot="sign-up"
+    usernameAlias="email"
+    [formFields]="formFields"
+  ></amplify-sign-up>
+  <amplify-sign-in slot="sign-in" usernameAlias="email"></amplify-sign-in>
+</amplify-authenticator>

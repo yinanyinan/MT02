@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-loanmanageapp-dev-165012-authRole",
+      "UnauthRoleArn": "arn:aws:iam::919615431994:role/amplify-loanmanageapp-dev-165012-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::919615431994:role/amplify-loanmanageapp-dev-165012-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-loanmanageapp-dev-165012-deployment",
+      "UnauthRoleName": "amplify-loanmanageapp-dev-165012-unauthRole",
+      "StackName": "amplify-loanmanageapp-dev-165012",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:919615431994:stack/amplify-loanmanageapp-dev-165012/dbc5a260-b3bf-11eb-a9dc-0e94cc22b2b3",
+      "AmplifyAppId": "d2wkafpd5xvs6z"
+    },
+    "categories": {
+      "auth": {
+        "loanmanageapp4816e6d8": {
+          "userPoolId": "ap-northeast-1_GpSbmRrh5",
+          "userPoolName": "amplify_backend_manager_d2l09de7iqouy7",
+          "webClientId": "27hvbtdro1ks1urbsbcbm7tebg",
+          "nativeClientId": "27hvbtdro1ks1urbsbcbm7tebg"
+        }
+      }
+    }
+  }
+}

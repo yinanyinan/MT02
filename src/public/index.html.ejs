@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- This file is the template for "www/index.html". Modify it to fit your needs -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <!-- The following EJS lines include the necessary CSS and JS
+  from Monaca (cordova.js/ loader.js) in production mode -->
+<% for (var dep in htmlWebpackPlugin.options.externalJS) { %>
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.externalJS[dep] %>"></script><% } %>
+<% for (var dep in htmlWebpackPlugin.options.externalCSS) { %>
+  <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.options.externalCSS[dep] %>"><% } %>
+
+  <script>
+    // let ncmb = new NCMB("f13b42a2ae00b526c52adfa2c1aebd6471ea9785ea6d7e9a12fb6ed8e2568234","7a1edf1205502ec84626882935bb25f65372fa9de93f02ff72b702ffb6b4a3df"); // mizuno
+    let ncmb = new NCMB("3f963a54ae42979b35c7c01dcf7bd3cec37576b58dd169ba4e1a89ee34050166","1a58163b8f89db0d96d7f4a686ef3937e95dce55e5b3b53fb8e5e58e09808058"); // miura
+  </script>
+</head>
+<body>
+  <app></app>
+</body>
+</html>
