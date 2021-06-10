@@ -1,6 +1,0 @@
-type Restaurant @model {
-  id: ID!
-  name: String!
-  description: String!
-  city: String!
-}
