@@ -1,0 +1,66 @@
+/* App CSS */
+.content {
+  text-align: center;
+  padding: 10px;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom :10px;
+}
+
+table tr{
+  border-bottom: solid 1px #eee;
+  cursor: pointer;
+}
+
+table td{
+  text-align: center;
+  width: 25%;
+  padding: 2px 0;
+}
+table th{
+  text-align: center;
+  width: 5%;
+  padding: 5px 0;
+}
+
+table tr:nth-child(even){
+  background-color: #eee
+}
+
+table.searchList tr:nth-child(even){
+  background-color: white;
+}
+
+.btn{
+  float: left;
+  width: 50%;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.pagination li a {
+    border: 1px solid #ddd; 
+    font-size: 22px;
+}
+
+div.center {
+    text-align: center;
+}
+
